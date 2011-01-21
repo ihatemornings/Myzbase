@@ -29,6 +29,12 @@
 				return d;
 			}
 			
+			function parseDate(d, t) {
+				var d_parts = d.match(/(\d+)/g);
+				var t_parts = t.match(/(\d+)/g);
+				return new Date(d_parts[0], d_parts[1]-1, d_parts[2], t_parts[0], t_parts[1]);
+			}
+			
 			var $listing = $(this);
 			
 			$listing.append("<p>Loading gigs...</p>");
@@ -45,7 +51,8 @@
 					
 					// Sort out date and time
 					var event_time = events[i].start.time ? events[i].start.time : "20:00";
-					var event_date_object = new Date(events[i].start.date + "T" + event_time);
+					var event_date_object = parseDate(events[i].start.date, event_time);
+					log(events[i].start.date);
 					var event_dtstart = format_iso8601(event_date_object);
 					event_time = leadingZeros(event_date_object.getHours(), 2, "0") + ":" + leadingZeros(event_date_object.getMinutes(), 2, "0");
 					event_date_object.setHours(event_date_object.getHours() + 3);

@@ -1,0 +1,155 @@
+.sc-player{
+  width: 100%;
+  position: relative;
+  margin: 0;
+}
+
+.sc-player ol, .sc-player li{
+  margin: 0;
+  padding: 0;
+  list-style-position: inside;
+}
+
+/* Artworks */
+
+.sc-player .sc-artwork-list{
+  display: none;
+}
+
+.sc-player .sc-artwork-list li{
+  list-style-type: none;
+  display: none;
+}
+
+.sc-player .sc-artwork-list li.active{
+  list-style-type: none;
+  display: block;
+}
+
+.sc-player .sc-artwork-list li img, .sc-player .sc-artwork-list li div{
+  list-style-type: none;
+  width: 100%;
+  height: 100%;
+}
+
+/* controls */
+
+.sc-player .sc-controls{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 0;
+}
+
+.sc-player .sc-controls a{
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+
+.sc-player .sc-controls a.sc-play, .sc-player .sc-controls a.sc-pause{
+  text-indent: -3000px;
+}
+
+.sc-player .sc-controls a.sc-pause{
+  display: none;
+}
+
+.sc-player.playing .sc-controls a.sc-play{
+  display: none;
+}
+
+.sc-player.playing .sc-controls a.sc-pause{
+  display: block;
+}
+
+/* scrubber */
+
+.sc-scrubber {
+  position: absolute;
+  left: 50px;
+  right: 0;
+  top: 0;
+  height: 40px;
+}
+
+.sc-scrubber .sc-time-span{
+  height: 40px;
+  margin: 0;
+  position: relative;
+}
+
+.sc-scrubber .sc-buffer, .sc-scrubber .sc-played{
+  height: 40px;
+  position: absolute;
+  top: 0;
+}
+
+.sc-scrubber .sc-time-indicators{
+  display: none;
+}
+
+/* tracks */
+
+/* Track listings*/
+
+.sc-player ol.sc-trackslist{
+	padding-top: 50px;
+}
+
+.sc-player ol.sc-trackslist li{
+  cursor: pointer;
+  margin: 0;
+  padding: 5px;
+  list-style: none;
+}
+
+/* Track info*/
+
+.sc-player .sc-info{
+  position: absolute;
+  top: 10px;
+  left: -5000px;
+  width : 200px;
+  padding: 5px;
+  height: 450px;
+  z-index: 500;
+  margin-left: -40px;
+}
+
+.sc-player .sc-info.active{
+  left: 25%;
+  top: 5%;
+}
+
+
+.sc-player .sc-info-toggle{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: none;
+}
+
+.sc-player .sc-info-toggle.active{
+  left: -5000px;
+}
+
+.sc-player .sc-info-close{
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+/* utilities */
+
+.sc-player .hidden {
+  display: none;
+}
+
+.sc-player-engine-container{
+  width: 1px;
+  height: 1px;
+  position: fixed;
+  top: 2px;
+  left: 2px;
+}

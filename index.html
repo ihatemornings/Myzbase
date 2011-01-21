@@ -18,15 +18,16 @@
   <meta name="author" content="Ben Walker">
 
   <!--  Mobile viewport optimized: j.mp/bplateviewport -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, max-scale=1.0, user-scalable:0">
 
   <!-- Place favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
 
-  <!-- CSS : implied media="all" -->
-  <link rel="stylesheet" href="css/style.css?v=2">
+	<!-- CSS : implied media="all" -->
+	<link rel="stylesheet" href="css/style.css?v=2">
+	<link rel="stylesheet" href="css/sc-player-minimal.css?v=2">
 
   <!-- Uncomment if you are specifically targeting less enabled mobile browsers
   <link rel="stylesheet" media="handheld" href="css/handheld.css?v=2">  -->
@@ -55,7 +56,7 @@
 		</div>
 		
 		<div id="player" class="module soundcloud">
-			<object height="325" width="100%"> <param name="movie" value="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F365379"></param> <param name="allowscriptaccess" value="always"></param> <embed allowscriptaccess="always" height="325" src="http://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F365379" type="application/x-shockwave-flash" width="100%"></embed> </object>
+			<a href="http://soundcloud.com/littlefishmusic/sets/baffled-and-beat" class="sc-player">Baffled and Beat &ndash; the debut album</a>
 		</div>
 		
 		<div id="listing" class="module gigs songkick">
@@ -90,18 +91,17 @@
   </div> <!--! end of #container -->
 
 
-  <!-- Javascript at the bottom for fast page loading -->
-
-  <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
-  <script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.4.2.js"%3E%3C/script%3E'))</script>
-  
-  
-  <script src="js/libs/jquery.backstretch.min.js"></script>
-  <script src="js/mylibs/gigscraper.js"></script>
-  <script src="js/script.js"></script>
-  
-  
+	<!-- Grab Google CDN's jQuery. fall back to local if necessary -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
+	<script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.4.2.js"%3E%3C/script%3E'))</script>
+	
+	
+	<script src="js/libs/jquery.backstretch.min.js"></script>
+	<script src="js/mylibs/gigscraper.js"></script>
+	<script type="text/javascript" src="js/libs/soundcloud.player.api.js"></script>
+	<script type="text/javascript" src="js/libs/sc-player.js"></script>
+	<script src="js/script.js"></script>
+	
   <!--[if lt IE 7 ]>
     <script src="js/libs/dd_belatedpng.js"></script>
     <script> DD_belatedPNG.fix('img, .png_bg'); //fix any <img> or .png_bg background-images </script>

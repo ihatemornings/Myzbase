@@ -16,6 +16,12 @@
   html5doctor.com/html-5-reset-stylesheet/
 */
 
+@import url(fonts/NeoRetroDraw-fontfacekit/stylesheet.css);
+@import url(fonts/Miso-fontfacekit/stylesheet.css);
+@import url(fonts/League-Gothic-fontfacekit/stylesheet.css);
+@import url(fonts/Impact-Label-fontfacekit/stylesheet.css);
+@import url(fonts/bebas-neue-fontfacekit/stylesheet.css);
+
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -218,13 +224,12 @@ button {  width: auto; overflow: visible; }
 
 
 
-
-
  /* Primary Styles
     Author: 
  */
 
 body {
+	font: Helvetica, Arial, sans-serif;
 	background: #000;
 	/* background: url(../images/myspace-capture-faded.png) 51% top no-repeat;
 	min-height: 3000px; */
@@ -242,9 +247,12 @@ header {
 }
 
 h1 {
-	font-size: 36px;
+	font-family: NeoRetroDrawRegular, Helvetica, Arial, sans-serif;
+	font-size: 48px;
 	line-height: 1;
 	letter-spacing: -0.5px;
+	/* text-transform: uppercase; */
+	margin-bottom: 6px;
 	color: #fff;
 }
 h2 {
@@ -272,15 +280,18 @@ abbr, abbr[title] {
 	background: rgba(0,0,0,0.7);
 }
 
+.text {
+	padding-bottom: 0;
+}
 .text p, .text ul, .text ol, .text blockquote {
-	margin-bottom: 1em;
+	padding-bottom: 1em;
 }
 
 #title-description {
 	margin-bottom: 40px;
 }
 #title-description p {
-	font-size: 16px;
+	font-size: 15px;
 }
 
 .gigs th {

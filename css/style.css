@@ -228,45 +228,27 @@ body {
 	background: #000;
 	/* background: url(../images/myspace-capture-faded.png) 51% top no-repeat;
 	min-height: 3000px; */
-	color: #eee;
-}
-#container {
-	width: 960px;
-	margin: 0 auto;
+	color: #ddd;
 }
 header {
-	height: 250px;
-	background: url(../images/lf-banner-01.jpg) left top no-repeat;
 }
-#main {
-	position: relative;
-	padding-top: 40px;
-	padding-left: 150px;
-}
-#primary {
-	float: left;
-	width: 470px;
+#container {
+	float: right;
+	width: 400px;
 	margin-right: 40px;
 }
-#secondary {
-	float: left;
-	width: 300px;
-}
-#links {
-	position: absolute;
-	left: 0;
-	top: 100px;
-	width: 130px;
+#main {
+	padding-top: 40px;
 }
 
 h1 {
-	height: 60px;
-	font-size: 26px;
+	font-size: 36px;
+	line-height: 1;
 	letter-spacing: -0.5px;
 	color: #fff;
-	padding: 0 10px;
 }
 h2 {
+	display: none;
 	font-size: 16px;
 	margin-bottom: 1em;
 }
@@ -275,21 +257,37 @@ h3 {
 	margin-bottom: 1em;
 }
 a:link, a:visited, a:hover, a:active {
-	color: #4AED05;
+	color: #fff;
+}
+object, embed {
+	display: block;
+}
+abbr, abbr[title] {
+	border: none;
 }
 
 .module {
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 	padding: 10px;
-	border-top: 2px solid #f00;
+	background: rgba(0,0,0,0.7);
 }
 
 .text p, .text ul, .text ol, .text blockquote {
 	margin-bottom: 1em;
 }
 
-.gigs th, .gigs td {
+#title-description {
+	margin-bottom: 40px;
+}
+#title-description p {
+	font-size: 16px;
+}
+
+.gigs th {
 	padding-bottom: 1em;
+}
+.gigs tr:last-child th {
+	padding-bottom: 0;
 }
 .gigs th {
 	padding-right: 20px;
@@ -309,24 +307,30 @@ a:link, a:visited, a:hover, a:active {
 	border: 2px solid #ccc;
 }
 
+#links {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	padding: 10px 0;
+	background: rgba(0,0,0,0.7);
+}
 #links ul, #links li {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
+#links ul {
+}
+#links li {
+	display: inline;
+	margin: 0 10px;
+}
 #links li a {
-	display: block;
 	text-size: 11px;
-	margin-bottom: 2px;
-	padding: 4px 10px;
-	background: #444;
-	color: #fff;
-	border: 1px solid #666;
 	text-decoration: none;
-	-moz-border-radius: 4px;
 }
 #links li a:hover {
-	background: #f00;
+	text-decoration: underline;
 }
 
 /*

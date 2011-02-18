@@ -1,3 +1,16 @@
+<?php
+	
+	require("config.php");
+	
+	$myzbase_id = isset($_GET["id"]) ? $_GET["id"] : "littlefishmusic";
+	$myzbase_name = $myzbase[$myzbase_id]["name"];
+	$myzbase_description = $myzbase[$myzbase_id]["description"];
+	$myzbase_soundcloud_set_url = $myzbase[$myzbase_id]["soundcloud_set_url"];
+	$myzbase_songkick_id = $myzbase[$myzbase_id]["songkick_id"];
+	$myzbase_photo = $myzbase[$myzbase_id]["photo"];
+	$myzbase_website_url = $myzbase[$myzbase_id]["website_url"];
+	
+?>
 <!doctype html>  
 
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ --> 
@@ -13,7 +26,7 @@
        Remove this if you use the .htaccess -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <title>Little Fish Myspace: listen to music, find gigs</title>
+  <title><?php echo $myzbase_name ?> Myspace: listen to music, find gigs</title>
   <meta name="description" content="A two-piece garage-rock band from Oxford &ndash; Soundcloud music player, Songkick gig listings and contact details ">
   <meta name="author" content="Ben Walker">
 
@@ -49,23 +62,23 @@
 	
 		<div id="title-description" class="module">
 			
-			<h1>Little Fish</h1>
+			<h1><?php echo $myzbase_name; ?></h1>
 			
-			<p>A two-piece garage-rock band from Oxford</p>
+			<p><?php echo $myzbase_description; ?></p>
 			
 		</div>
 		
 		<div id="photo" class="module">
-			<img src="images/lf-bg.jpg" alt="Little Fish official photo" width="100%" />
+			<img src="images/<?php echo $myzbase_photo ?>" alt="<?php echo $myzbase_name; ?> official photo" width="100%" />
 		</div>
 		
 		<div id="player" class="module soundcloud">
-			<a href="http://soundcloud.com/littlefishmusic/sets/baffled-and-beat" class="sc-player">Baffled and Beat &ndash; the debut album</a>
+			<a href="<?php echo $myzbase_soundcloud_set_url ?>" class="sc-player"><?php echo $myzbase_name; ?> music player</a>
 		</div>
 		
 		<div id="listing" class="module gigs songkick">
 			
-			<h2>Little Fish gigs, shows &amp; events</h2>
+			<h2><?php echo $myzbase_name; ?> gigs, shows &amp; events</h2>
 			
 			<div id="songkick"></div>
 			
@@ -73,7 +86,7 @@
 		
 		<div id="info" class="module text">
 			
-			<h2>Contact Little Fish</h2>
+			<h2>Contact <?php echo $myzbase_name; ?></h2>
 			
 			<ul>
 				<li>Management and enquires: <a href="mailto:littlefish@trinifold.co.uk">littlefish@trinifold.co.uk</a></li>
@@ -87,7 +100,7 @@
 	<footer id="links">
 		
 		<ul>
-			<li><a href="http://littlefishmusic.com">Little Fish official website</a></li>
+			<li><a href="<?php echo $myzbase_website_url; ?>"><?php echo $myzbase_name; ?> official website</a></li>
 		</ul>
 		
 	</footer>
@@ -106,6 +119,11 @@
 	<script type="text/javascript" src="js/libs/sc-player.js"></script>
 	<script src="js/plugins.js"></script>
 	<script src="js/script.js"></script>
+	<script>
+		
+		$("#songkick").gigscraper("<?php echo $myzbase_songkick_id ?>", "0trHk7OHF9iyGVwE");
+		
+	</script>
 	
   <!--[if lt IE 7 ]>
     <script src="js/libs/dd_belatedpng.js"></script>

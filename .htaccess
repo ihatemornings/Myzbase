@@ -406,6 +406,6 @@ AddCharset utf-8 .html .css .js .xml .json .rss
 ### Temporary redirect to demonstrate URLs ###
 
 <IfModule mod_rewrite.c>
-  RewriteRule littlefishmusic index.html [L]
+  RewriteRule littlefishmusic index.php [L]
 </IfModule>
 

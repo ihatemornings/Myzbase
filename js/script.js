@@ -8,8 +8,6 @@
 	
 	$("#photo").hide();
 	
-	$("#songkick").gigscraper("2505871", "0trHk7OHF9iyGVwE");
-
 })(this.jQuery);
 
 

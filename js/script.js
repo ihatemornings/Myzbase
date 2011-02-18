@@ -4,7 +4,9 @@
 
 (function($){
 	
-	$.backstretch("images/lf-bg.jpg");
+	$.backstretch($("#photo img").attr("src"));
+	
+	$("#photo").hide();
 	
 	$("#songkick").gigscraper("2505871", "0trHk7OHF9iyGVwE");
 

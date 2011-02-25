@@ -128,11 +128,6 @@
 	<script type="text/javascript" src="js/libs/sc-player.js"></script>
 	<script src="js/plugins.js"></script>
 	<script src="js/script.js"></script>
-	<script>
-		
-		$("#songkick").gigscraper("<?php echo $myzbase_songkick_id ?>", "0trHk7OHF9iyGVwE");
-		
-	</script>
 	
   <!--[if lt IE 7 ]>
     <script src="js/libs/dd_belatedpng.js"></script>

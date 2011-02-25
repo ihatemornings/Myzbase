@@ -37,7 +37,7 @@
 			
 			var $listing = $(this);
 			
-			$listing.append("<p>Loading gigs...</p>");
+			$listing.append("<p>Loading gigs...</p>").addClass("loading");
 			$.getJSON("http://api.songkick.com/api/3.0/artists/" + songkick_id + "/calendar.json?apikey=" + api_key + "&jsoncallback=?", function(data) {
 				$o = $("<table><tbody></tbody></table>");
 				var events = data.resultsPage.results.event;
@@ -64,8 +64,11 @@
 					// Add the gig to the list
 					$o.append('<tr class="vevent"><th><span class="month">' + event_month + '</span> <span class="day">' + event_day_of_month + '</span></th><td><a href="' + event_ticketlink + '"><span class="summary">' + event_summary + '</span>, <span class="location">' + event_location + '</span></a><br /><span class="meta"><abbr class="dtstart" title="' + event_dtstart + '">' + event_time + '</abbr> <abbr class="dtend" title="' + event_dtend + '">start</abbr></span></td></tr>');
 				}
-				$listing.empty().append($o);
+				$listing.empty().append($o).removeClass("loading");
 			});
+			if ($listing.hasClass("loading")) {
+				$listing.empty().append("<p>No upcoming gigs.</p>");
+			}
 			
 		});
 	}

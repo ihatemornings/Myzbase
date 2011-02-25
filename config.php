@@ -57,6 +57,20 @@ $myzbase["pickyourweapon"] = Array(
 	)
 );
 
+$myzbase["shemakeswar"] = Array(
+	"name" => "She Makes War",
+	"description" => "Grungey dystopian gloom-pop from London solo artist Laura Kidd",
+	"soundcloud_set_url" => "http://soundcloud.com/shemakeswar/sets/rootmusic-bandpage-3/",
+	"songkick_id" => "714818",
+	"photo" => "shemakeswar.jpg",
+	"website_url" => "http://www.shemakeswar.com",
+	"contacts" => Array(
+		Array(
+			"type" => "Band",
+			"email" => "enquiries@shemakeswar.com"
+		)
+	)
+);
 
 
 ?>

@@ -103,6 +103,9 @@
   padding: 5px;
   list-style: none;
 }
+.sc-player ol.sc-trackslist li a {
+	padding-right: 30px;
+}
 
 /* Track info*/
 

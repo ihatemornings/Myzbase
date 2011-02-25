@@ -9,6 +9,8 @@
 	$myzbase_songkick_id = $myzbase[$myzbase_id]["songkick_id"];
 	$myzbase_photo = $myzbase[$myzbase_id]["photo"];
 	$myzbase_website_url = $myzbase[$myzbase_id]["website_url"];
+	$has_contacts = isset($myzbase[$myzbase_id]["contacts"]);
+	if ($has_contacts) $myzbase_contacts = $myzbase[$myzbase_id]["contacts"];
 	
 ?>
 <!doctype html>  
@@ -84,16 +86,23 @@
 			
 		</div>
 		
+		<?php if ($has_contacts) { ?>
 		<div id="info" class="module text">
 			
 			<h2>Contact <?php echo $myzbase_name; ?></h2>
 			
 			<ul>
-				<li>Management and enquires: <a href="mailto:littlefish@trinifold.co.uk">littlefish@trinifold.co.uk</a></li>
-				<li>Booking agent: <a href="mailto:phyllis@itb.co.uk">phyllis@itb.co.uk</a></li>
+				<?php foreach ($myzbase_contacts as $contact) { ?>
+				<li><?php echo $contact["type"] ?>:
+					<a href="mailto:<?php echo $contact["email"] ?>">
+						<?php echo $contact["email"] ?>
+					</a>
+				</li>
+				<?php } ?>
 			</ul>
 			
 		</div>
+		<?php } ?>
 		
 	</div>
 	

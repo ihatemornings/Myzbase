@@ -138,7 +138,7 @@
 	
   <!--[if lt IE 7 ]>
     <script src="js/libs/dd_belatedpng.js"></script>
-    <script> DD_belatedPNG.fix('img, .png_bg'); //fix any <img> or .png_bg background-images </script>
+    <script> DD_belatedPNG.fix('img, .png_bg, #songkick'); //fix any <img> or .png_bg background-images </script>
   <![endif]-->
 
   <!-- asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet 

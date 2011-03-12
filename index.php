@@ -3,6 +3,9 @@
 	require("config.php");
 	
 	$myzbase_id = isset($_GET["id"]) ? $_GET["id"] : "littlefishmusic";
+	
+	if (!isset($myzbase[$myzbase_id])) header('Location: http://myzbase.tumblr.com');
+	
 	$myzbase_name = $myzbase[$myzbase_id]["name"];
 	$myzbase_description = $myzbase[$myzbase_id]["description"];
 	$myzbase_soundcloud_set_url = $myzbase[$myzbase_id]["soundcloud_set_url"];

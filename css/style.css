@@ -240,6 +240,10 @@ body.right #container {
 	float: right;
 	margin: 0 40px 0 0;
 }
+html.ie6 body #container {
+	float: none;
+	margin: 0 auto;
+}
 #main {
 	padding-top: 40px;
 }
@@ -374,7 +378,7 @@ body.left #links {
 		float: none;
 		margin: 0 20px;
 	}
-	#links {
+	#links, body.left #links, body.right #links {
 		position: static;
 	}
 	

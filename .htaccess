@@ -406,6 +406,10 @@ AddCharset utf-8 .html .css .js .xml .json .rss
 ### Temporary redirect to demonstrate URLs ###
 
 <IfModule mod_rewrite.c>
-  # RewriteRule littlefishmusic index.php [L]
+	RewriteBase /myzbase
+	RewriteCond %{REQUEST_FILENAME} -f [OR]
+	RewriteCond %{REQUEST_FILENAME} -d
+	RewriteRule ^ - [L]
+	RewriteRule ^([^/]*)/?$ ?id=$1 [L]
 </IfModule>
 

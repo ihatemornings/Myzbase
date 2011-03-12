@@ -11,6 +11,7 @@
 	$myzbase_website_url = $myzbase[$myzbase_id]["website_url"];
 	$has_contacts = isset($myzbase[$myzbase_id]["contacts"]);
 	if ($has_contacts) $myzbase_contacts = $myzbase[$myzbase_id]["contacts"];
+	$myzbase_layout = $myzbase[$myzbase_id]["layout"];
 	
 ?>
 <!doctype html>  
@@ -52,7 +53,7 @@
 
 </head>
 
-<body class="right">
+<body class="<?php echo $myzbase_layout; ?>">
 
   <div id="container">
 	

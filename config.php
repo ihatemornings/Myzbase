@@ -16,7 +16,8 @@ $myzbase["littlefishmusic"] = Array(
 			"type" => "Booking agent",
 			"email" => "phyllis@itb.co.uk"
 		)
-	)
+	),
+	"layout" => "right"
 );
 
 $myzbase["asilentfilm"] = Array(
@@ -39,7 +40,8 @@ $myzbase["asilentfilm"] = Array(
 			"type" => "Agent US",
 			"email" => "dklein@caa.com"
 		)
-	)
+	),
+	"layout" => "right"
 );
 
 $myzbase["pickyourweapon"] = Array(
@@ -54,7 +56,8 @@ $myzbase["pickyourweapon"] = Array(
 			"type" => "Band",
 			"email" => "pickyourweapon@gmail.com"
 		)
-	)
+	),
+	"layout" => "right"
 );
 
 $myzbase["shemakeswar"] = Array(
@@ -69,7 +72,8 @@ $myzbase["shemakeswar"] = Array(
 			"type" => "Band",
 			"email" => "enquiries@shemakeswar.com"
 		)
-	)
+	),
+	"layout" => "right"
 );
 
 

@@ -76,5 +76,21 @@ $myzbase["shemakeswar"] = Array(
 	"layout" => "right"
 );
 
+$myzbase["origamitsunami"] = Array(
+	"name" => "Origami Tsunami",
+	"description" => "Looking to bring back the funk, cause it feels good.",
+	"soundcloud_set_url" => "http://soundcloud.com/origamitsunami/sets/rootmusic-bandpage-1/",
+	"songkick_id" => "4023436",
+	"photo" => "origamitsunami.jpg",
+	"website_url" => "http://ori-tsu.tumblr.com",
+	"contacts" => Array(
+		Array(
+			"type" => "All enquiries",
+			"email" => "origamitsunami.band@googlemail.com"
+		)
+	),
+	"layout" => "right"
+);
+
 
 ?>

@@ -2,7 +2,7 @@
 	
 	require("config.php");
 	
-	$myzbase_id = isset($_GET["id"]) ? $_GET["id"] : "littlefishmusic";
+	$myzbase_id = isset($_GET["id"]) ? $_GET["id"] : "";
 	
 	if (!isset($myzbase[$myzbase_id])) header('Location: http://myzbase.tumblr.com');
 	

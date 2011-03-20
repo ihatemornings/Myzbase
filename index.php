@@ -34,8 +34,8 @@
        Remove this if you use the .htaccess -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <title><?php echo $myzbase_name; ?> Myspace: listen to music, find gigs</title>
-  <meta name="description" content="<?php echo $myzbase_description; ?> &ndash; Soundcloud music player, Songkick gig listings and contact details ">
+  <title><?php echo $myzbase_name; ?> &mdash; Myzbase (like Myspace but good)</title>
+  <meta name="description" content="<?php echo $myzbase_description; ?> &ndash; Soundcloud music player, Songkick gig listings and contact details">
   <meta name="author" content="Ben Walker">
 
   <!--  Mobile viewport optimized: j.mp/bplateviewport -->

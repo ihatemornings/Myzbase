@@ -66,6 +66,7 @@ $myzbase["shemakeswar"] = Array(
 	"soundcloud_set_url" => "http://soundcloud.com/shemakeswar/sets/rootmusic-bandpage-3/",
 	"songkick_id" => "714818",
 	"photo" => "shemakeswar.jpg",
+	"photo_credit" => "Photo by <a href=\"http://www.lauraward.co.uk/\">Laura Ward</a>",
 	"website_url" => "http://www.shemakeswar.com",
 	"contacts" => Array(
 		Array(

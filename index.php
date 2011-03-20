@@ -32,8 +32,8 @@
        Remove this if you use the .htaccess -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <title><?php echo $myzbase_name ?> Myspace: listen to music, find gigs</title>
-  <meta name="description" content="A two-piece garage-rock band from Oxford &ndash; Soundcloud music player, Songkick gig listings and contact details ">
+  <title><?php echo $myzbase_name; ?> Myspace: listen to music, find gigs</title>
+  <meta name="description" content="<?php echo $myzbase_description; ?> &ndash; Soundcloud music player, Songkick gig listings and contact details ">
   <meta name="author" content="Ben Walker">
 
   <!--  Mobile viewport optimized: j.mp/bplateviewport -->
@@ -75,11 +75,11 @@
 		</div>
 		
 		<div id="photo" class="module">
-			<img src="images/<?php echo $myzbase_photo ?>" alt="<?php echo $myzbase_name; ?> official photo" width="100%" />
+			<img src="images/<?php echo $myzbase_photo; ?>" alt="<?php echo $myzbase_name; ?> official photo" width="100%" />
 		</div>
 		
 		<div id="player" class="module soundcloud">
-			<a href="<?php echo $myzbase_soundcloud_set_url ?>" class="sc-player"><?php echo $myzbase_name; ?> music player</a>
+			<a href="<?php echo $myzbase_soundcloud_set_url; ?>" class="sc-player"><?php echo $myzbase_name; ?> music player</a>
 		</div>
 		
 		<div id="listing" class="module gigs songkick">
@@ -97,9 +97,9 @@
 			
 			<ul>
 				<?php foreach ($myzbase_contacts as $contact) { ?>
-				<li><?php echo $contact["type"] ?>:
-					<a href="mailto:<?php echo $contact["email"] ?>">
-						<?php echo $contact["email"] ?>
+				<li><?php echo $contact["type"]; ?>:
+					<a href="mailto:<?php echo $contact["email"]; ?>">
+						<?php echo $contact["email"]; ?>
 					</a>
 				</li>
 				<?php } ?>

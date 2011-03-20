@@ -326,6 +326,9 @@ abbr, abbr[title] {
 }
 
 #links {
+	position: fixed;
+	left: 0;
+	bottom: 0;
 	padding: 10px 0;
 	background: rgba(0,0,0,0.7);
 }
@@ -355,6 +358,23 @@ body.left #links {
 #links li a:hover {
 	text-decoration: underline;
 }
+#credit {
+	float: right;
+	margin-bottom: 20px;
+	padding: 0 2px;
+	font-size: 11px;
+	text-align: right;
+	color: #666;
+	background: rgba(0,0,0,0.7);
+}
+#credit a {
+	color: #999;
+	text-decoration: none;
+}
+#credit a:hover {
+	text-decoration: underline;
+}
+
 
 /*
  * Media queries for responsive design

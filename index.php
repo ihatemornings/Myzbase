@@ -108,15 +108,26 @@
 		</div>
 		<?php } ?>
 		
+		<div id="credit">
+
+			<p class="credit">(this is <a href="http://myzbase.tumblr.com">Myzbase</a> by <a href="http://twitter.com/ihatemornings">@ihatemornings</a>)</p>
+
+		</div>
+		
 	</div>
 	
-	<footer id="links">
+	<footer>
 		
-		<ul>
-			<li><a href="<?php echo $myzbase_website_url; ?>"><?php echo $myzbase_name; ?> official website</a></li>
-		</ul>
+		<div id="links">
+		
+			<ul>
+				<li>Now please visit the <a href="<?php echo $myzbase_website_url; ?>"><?php echo $myzbase_name; ?> official website</a> &rarr;</li>
+			</ul>
+			
+		</div>
 		
 	</footer>
+	
 	
   </div> <!--! end of #container -->
 

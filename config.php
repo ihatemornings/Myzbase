@@ -98,6 +98,7 @@ $myzbase["fireworksnight"] = Array(
 	"soundcloud_set_url" => "http://soundcloud.com/organ-grinder-records",
 	"songkick_id" => "519368",
 	"photo" => "fireworksnight.jpg",
+	"photo_credit" => "Photo by <a href=\"http://www.flickr.com/photos/18384248@N00/1428990351\">talkingimo</a>, used under <a href=\"http://creativecommons.org/licenses/by-nc-sa/2.0/\">CC BY-NC-SA 2.0</a>",
 	"website_url" => "http://www.asilentfilm.com",
 	"contacts" => Array(
 		Array(

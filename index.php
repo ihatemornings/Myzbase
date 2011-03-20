@@ -11,6 +11,8 @@
 	$myzbase_soundcloud_set_url = $myzbase[$myzbase_id]["soundcloud_set_url"];
 	$myzbase_songkick_id = $myzbase[$myzbase_id]["songkick_id"];
 	$myzbase_photo = $myzbase[$myzbase_id]["photo"];
+	$has_photo_credit = isset($myzbase[$myzbase_id]["photo_credit"]);
+	if ($has_photo_credit) $myzbase_photo_credit = $myzbase[$myzbase_id]["photo_credit"];
 	$myzbase_website_url = $myzbase[$myzbase_id]["website_url"];
 	$has_contacts = isset($myzbase[$myzbase_id]["contacts"]);
 	if ($has_contacts) $myzbase_contacts = $myzbase[$myzbase_id]["contacts"];
@@ -109,9 +111,13 @@
 		<?php } ?>
 		
 		<div id="credit">
-
-			<p class="credit">(this is <a href="http://myzbase.tumblr.com">Myzbase</a> by <a href="http://twitter.com/ihatemornings">@ihatemornings</a>)</p>
-
+			
+			<?php if ($has_photo_credit) { ?>
+			<p><?php echo $myzbase_photo_credit; ?></p>
+			<?php } ?>
+			
+			<p>(this is <a href="http://myzbase.tumblr.com">Myzbase</a> by <a href="http://twitter.com/ihatemornings">@ihatemornings</a>)</p>
+			
 		</div>
 		
 	</div>

@@ -92,5 +92,20 @@ $myzbase["origamitsunami"] = Array(
 	"layout" => "right"
 );
 
+$myzbase["fireworksnight"] = Array(
+	"name" => "Fireworks Night",
+	"description" => "A six piece chamber pop band",
+	"soundcloud_set_url" => "http://soundcloud.com/organ-grinder-records",
+	"songkick_id" => "519368",
+	"photo" => "fireworksnight.jpg",
+	"website_url" => "http://www.asilentfilm.com",
+	"contacts" => Array(
+		Array(
+			"type" => "All enquiries",
+			"email" => "neil@organgrinderrecords.co.uk"
+		)
+	),
+	"layout" => "right"
+);
 
 ?>

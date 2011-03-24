@@ -110,4 +110,20 @@ $myzbase["fireworksnight"] = Array(
 	"layout" => "right"
 );
 
+$myzbase["chaosbaby"] = Array(
+	"name" => "Chaos Baby",
+	"description" => "A female fronted punk rock &amp; roll band",
+	"soundcloud_set_url" => "http://soundcloud.com/chaosbaby/sets/myzbase",
+	"songkick_id" => "4115756",
+	"photo" => "chaosbaby.jpg",
+	"website_url" => "http://www.facebook.com/Team.Chaos1",
+	"contacts" => Array(
+		Array(
+			"type" => "All enquiries",
+			"email" => "chaosbabybookings@hotmail.co.uk"
+		)
+	),
+	"layout" => "right"
+);
+
 ?>

@@ -132,6 +132,7 @@ $myzbase["tamara"] = Array(
 	"soundcloud_set_url" => "http://soundcloud.com/tamara-martyrs/sets/myzbase-tracks/",
 	"songkick_id" => "4092796",
 	"photo" => "tamara.jpg",
+	"photo_credit" => "Photo by <a href=\"http://www.brucemarkos.co.uk/\">Bruce Markos</a>, used with permission",
 	"website_url" => "http://thetamiad.blogspot.com/",
 	"contacts" => Array(
 		Array(

@@ -126,4 +126,20 @@ $myzbase["chaosbaby"] = Array(
 	"layout" => "right"
 );
 
+$myzbase["tamara"] = Array(
+	"name" => "Tamara and the Martyrs",
+	"description" => "Alt-folk and blues-rock with continental flourishes and rich interplay",
+	"soundcloud_set_url" => "http://soundcloud.com/tamara-martyrs/sets/myzbase-tracks/",
+	"songkick_id" => "4092796",
+	"photo" => "tamara.jpg",
+	"website_url" => "http://thetamiad.blogspot.com/",
+	"contacts" => Array(
+		Array(
+			"type" => "All enquiries",
+			"email" => "tparsonsbaker@gmail.com"
+		)
+	),
+	"layout" => "left"
+);
+
 ?>

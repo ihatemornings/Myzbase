@@ -339,6 +339,7 @@ body.right #links {
 }
 body.left #links {
 	position: fixed;
+	left: inherit;
 	right: 0;
 	bottom: 0;
 }

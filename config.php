@@ -139,7 +139,7 @@ $myzbase["tamara"] = Array(
 			"email" => "tparsonsbaker@gmail.com"
 		)
 	),
-	"layout" => "left"
+	"layout" => "right"
 );
 
 ?>

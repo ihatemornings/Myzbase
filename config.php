@@ -143,4 +143,20 @@ $myzbase["tamara"] = Array(
 	"layout" => "right"
 );
 
+$myzbase["jont"] = Array(
+	"name" => "Jont",
+	"description" => "A Grey's Anatomy-featured singer-songwriter from the UK",
+	"soundcloud_set_url" => "http://soundcloud.com/jontmusic/sets/whole-again-sampler",
+	"songkick_id" => "84730",
+	"photo" => "jont.jpg",
+	"website_url" => "http://jontnet.com",
+	"contacts" => Array(
+		Array(
+			"type" => "All enquiries",
+			"email" => "mmorales.can@gmail.com"
+		)
+	),
+	"layout" => "left"
+);
+
 ?>

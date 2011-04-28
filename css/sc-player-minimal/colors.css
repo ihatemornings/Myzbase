@@ -1,6 +1,3 @@
-.sc-player {
-}
-
 .sc-player.special {
   border: 2px solid #ff3300;
   -moz-border-radius: 15px;
@@ -80,20 +77,16 @@
 
 /* Track listings*/
 
-.sc-player ol.sc-trackslist li.active, .sc-player ol.sc-trackslist li:hover {
+.sc-player ol.sc-trackslist li.active, .sc-player ol.sc-trackslist li:hover.active {
   background-color: #fff;
   color: #000;
 }
-
-.sc-player ol.sc-trackslist li.active a, .sc-player ol.sc-trackslist li:hover a {
+.sc-player ol.sc-trackslist li:hover {
+  background-color: rgba(255,255,255,0.5);
   color: #000;
 }
-
-.sc-track-duration {
-  text-align: right;
-  float: right;
-  padding: 0 5px;
-  margin-left: 5px;
+.sc-player ol.sc-trackslist li.active a, .sc-player ol.sc-trackslist li:hover a {
+  color: #000;
 }
 
 /* Track info*/

@@ -46,7 +46,7 @@
 				$o = $("<table><tbody></tbody></table>");
 				var events = data.resultsPage.results.event;
 				var month_text = new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec");
-				if (events.length > 0) {
+				if (data.resultsPage.totalEntries > 0) {
 					for(var i in events) {
 						
 						// Get the basic info

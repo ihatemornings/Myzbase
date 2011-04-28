@@ -159,4 +159,20 @@ $myzbase["jont"] = Array(
 	"layout" => "left"
 );
 
+$myzbase["themonroetransfer"] = Array(
+	"name" => "The Monroe Transfer",
+	"description" => "7-piece instrumental group. Sometimes quiet, sometimes loud.",
+	"soundcloud_set_url" => "http://soundcloud.com/themonroetransfer/sets/the-monroe-transfer-sampler",
+	"songkick_id" => "592088",
+	"photo" => "themonroetransfer.jpg",
+	"website_url" => "http://www.themonroetransfer.co.uk",
+	"contacts" => Array(
+		Array(
+			"type" => "All enquiries",
+			"email" => "themonroetransfer@gmail.com"
+		)
+	),
+	"layout" => "left"
+);
+
 ?>

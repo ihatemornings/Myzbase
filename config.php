@@ -133,7 +133,7 @@ $myzbase["tamara"] = Array(
 	"songkick_id" => "4092796",
 	"photo" => "tamara.jpg",
 	"photo_credit" => "Photo by <a href=\"http://www.brucemarkos.co.uk/\">Bruce Markos</a>, used with permission",
-	"website_url" => "http://thetamiad.blogspot.com/",
+	"website_url" => "http://tamaraandthemartyrs.com/",
 	"contacts" => Array(
 		Array(
 			"type" => "All enquiries",

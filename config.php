@@ -175,4 +175,24 @@ $myzbase["themonroetransfer"] = Array(
 	"layout" => "left"
 );
 
+$myzbase["djevara"] = Array(
+	"name" => "Djevara",
+	"description" => "100% independent hardcore alternative rock",
+	"soundcloud_set_url" => "http://soundcloud.com/djevara/sets/myzbase-tracks/",
+	"songkick_id" => "254748",
+	"photo" => "djevara.jpg",
+	"website_url" => "http://www.djevara.co.uk/",
+	"contacts" => Array(
+		Array(
+			"type" => "Email",
+			"email" => "band@djevara.co.uk"
+		),
+		Array(
+			"type" => "Booking enquiries",
+			"email" => "bookings@djevara.co.uk"
+		)
+	),
+	"layout" => "right"
+);
+
 ?>

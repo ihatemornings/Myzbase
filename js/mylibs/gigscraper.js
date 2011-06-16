@@ -50,7 +50,12 @@
 					for(var i in events) {
 						
 						// Get the basic info
-						var event_summary = events[i].venue.displayName;
+						var event_summary;
+						if (events[i].type == "Festival") {
+							event_summary = events[i].displayName;
+						} else {
+							event_summary = events[i].venue.displayName;
+						}
 						var event_location = events[i].venue.metroArea.displayName;
 						var event_ticketlink = events[i].uri.replace(/\\\//g, "/");
 						
@@ -67,7 +72,7 @@
 						var event_day_of_month = leadingZeros(event_date_object.getDate(), 2, "0");
 						
 						// Add the gig to the list
-						$o.append('<tr class="vevent"><th><span class="month">' + event_month + '</span> <span class="day">' + event_day_of_month + '</span></th><td><a href="' + event_ticketlink + '"><span class="summary">' + event_summary + '</span>, <span class="location">' + event_location + '</span></a><br /><span class="meta"><abbr class="dtstart" title="' + event_dtstart + '">' + event_time + '</abbr> <abbr class="dtend" title="' + event_dtend + '">start</abbr></span></td></tr>');
+						$o.append('<tr class="vevent"><th><span class="month">' + event_month + '</span> <span class="day">' + event_day_of_month + '</span></th><td><a href="' + event_ticketlink + '"><span class="summary">' + event_summary + '</span></a><br /><span class="location">' + event_location + '</span><span class="meta">, <abbr class="dtstart" title="' + event_dtstart + '">' + event_time + '</abbr> <abbr class="dtend" title="' + event_dtend + '">start</abbr></span></td></tr>');
 					}
 					$listing.removeClass("loading").empty().append($o);
 				} else {

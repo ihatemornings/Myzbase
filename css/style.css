@@ -320,6 +320,9 @@ abbr, abbr[title] {
 	padding: 2px 0;
 	border: 2px solid #ccc;
 }
+.gigs .meta {
+	display: none;
+}
 #songkick {
 	padding-bottom: 38px;
 	background: url(../images/songkick-logo.png) right bottom no-repeat;

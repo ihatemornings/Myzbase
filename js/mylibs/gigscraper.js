@@ -70,9 +70,14 @@
 						var event_date = event_date_object.toDateString();
 						var event_month = month_text[event_date_object.getMonth()];
 						var event_day_of_month = leadingZeros(event_date_object.getDate(), 2, "0");
+						var event_end_date = "";
+						if (events[i].type == "Festival") {
+							var event_date_object = parseDate(events[i].end.date, event_time);
+							event_end_date = "-" + leadingZeros(event_date_object.getDate(), 2, "0");
+						}
 						
 						// Add the gig to the list
-						$o.append('<tr class="vevent"><th><span class="month">' + event_month + '</span> <span class="day">' + event_day_of_month + '</span></th><td><a href="' + event_ticketlink + '"><span class="summary">' + event_summary + '</span></a><br /><span class="location">' + event_location + '</span><span class="meta">, <abbr class="dtstart" title="' + event_dtstart + '">' + event_time + '</abbr> <abbr class="dtend" title="' + event_dtend + '">start</abbr></span></td></tr>');
+						$o.append('<tr class="vevent"><th><span class="month">' + event_month + '</span> <span class="day">' + event_day_of_month + event_end_date + '</span></th><td><a href="' + event_ticketlink + '"><span class="summary">' + event_summary + '</span></a><br /><span class="location">' + event_location + '</span><span class="meta">, <abbr class="dtstart" title="' + event_dtstart + '">' + event_time + '</abbr> <abbr class="dtend" title="' + event_dtend + '">start</abbr></span></td></tr>');
 					}
 					$listing.removeClass("loading").empty().append($o);
 				} else {

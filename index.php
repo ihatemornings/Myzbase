@@ -9,7 +9,8 @@
 	$myzbase_name = $myzbase[$myzbase_id]["name"];
 	$myzbase_description = $myzbase[$myzbase_id]["description"];
 	$myzbase_soundcloud_set_url = $myzbase[$myzbase_id]["soundcloud_set_url"];
-	$myzbase_songkick_id = $myzbase[$myzbase_id]["songkick_id"];
+	$has_songkick_id = isset($myzbase[$myzbase_id]["songkick_id"]);
+	if ($has_songkick_id) $myzbase_songkick_id = $myzbase[$myzbase_id]["songkick_id"];
 	$myzbase_photo = $myzbase[$myzbase_id]["photo"];
 	$has_photo_credit = isset($myzbase[$myzbase_id]["photo_credit"]);
 	if ($has_photo_credit) $myzbase_photo_credit = $myzbase[$myzbase_id]["photo_credit"];
@@ -84,6 +85,7 @@
 			<a href="<?php echo $myzbase_soundcloud_set_url; ?>" class="sc-player"><?php echo $myzbase_name; ?> music player</a>
 		</div>
 		
+		<?php if ($has_songkick_id) { ?>
 		<div id="listing" class="module gigs songkick">
 			
 			<h2><?php echo $myzbase_name; ?> gigs, shows &amp; events</h2>
@@ -91,6 +93,7 @@
 			<div id="songkick"></div>
 			
 		</div>
+		<?php } ?>
 		
 		<?php if ($has_contacts) { ?>
 		<div id="info" class="module text">
@@ -151,7 +154,9 @@
 	<script src="js/script.js"></script>
 	<script>
 		jQuery(function ($) {
+			<?php if ($has_songkick_id) { ?>
 			$("#songkick").gigscraper("<?php echo $myzbase_songkick_id ?>", "0trHk7OHF9iyGVwE");
+			<? } ?>
 		});
 	</script>
 	

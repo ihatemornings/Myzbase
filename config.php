@@ -195,4 +195,13 @@ $myzbase["djevara"] = Array(
 	"layout" => "right"
 );
 
+$myzbase["breakfastjumpers"] = Array(
+	"name" => "The Breakfast Jumpers",
+	"description" => "Musica italiana fin da colazione",
+	"soundcloud_set_url" => "http://soundcloud.com/breakfastjumpers/sets/the-breakfast-jumpers",
+	"photo" => "breakfastjumpers.jpg",
+	"website_url" => "http://breakfastjumpers.blogspot.com/",
+	"layout" => "right"
+);
+
 ?>
